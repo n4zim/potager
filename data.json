@@ -1,0 +1,62 @@
+{
+  "basilic": {
+    "name": "Basilic grand vert",
+    "distance": 5,
+    "neighbours": ["haricots"]
+  },
+  "carottes": {
+    "name": "Carottes",
+    "distance": 6,
+    "neighbours": ["ciboule","haricots","radis"]
+  },
+  "ciboule": {
+    "name": "Ciboule de Chine",
+    "distance": 25,
+    "months": [
+      { "sowing": false, "harvesting": false },
+      { "sowing": true, "harvesting": false },
+      { "sowing": true, "harvesting": false },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": false, "harvesting": true },
+      { "sowing": false, "harvesting": true },
+      { "sowing": false, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": false, "harvesting": true },
+      { "sowing": false, "harvesting": false }
+    ]
+  },
+  "haricots": {
+    "name": "Haricots Nains Verts",
+    "depth": { "min": 2, "max": 3 },
+    "distance": 40,
+    "neighbours": ["carottes", "salade"]
+  },
+  "radis": {
+    "name": "Radis de 18 jours",
+    "distance": 2,
+    "depth": { "min": 2, "max": 3 },
+    "harvesting": { "min": 3, "max": 5 },
+    "months": [
+      { "sowing": false, "harvesting": false },
+      { "sowing": false, "harvesting": false },
+      { "sowing": true, "harvesting": false },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": true, "harvesting": true },
+      { "sowing": false, "harvesting": true },
+      { "sowing": false, "harvesting": false },
+      { "sowing": false, "harvesting": false }
+    ],
+    "neighbours": ["carottes", "salade"]
+  },
+  "salade": {
+    "name": "Salad Bowl Verte",
+    "distance": 15,
+    "neighbours": ["carottes", "radis"]
+  }
+}
